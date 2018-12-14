@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Page</title>
+
+</head>
+<style>
+	
+	input{
+	        outline: none;
+	    }
+	
+	    img {
+	        border: medium none;
+	    }
+		
+    body, img, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, form, div, input, textarea, span {
+        margin: 0;
+        padding: 0;
+        font-family: "宋体", "Arial";
+    }
+			#background
+			{
+				position: absolute;
+				background-image: url(背景2.png);
+				background-size: 100%;
+				height: 100%;
+				width: 100%;
+				z-index: 1;
+			}
+			.title
+			{
+				position: absolute;
+				align-content: center;
+			}
+			.button
+			{
+				background-color: aliceblue;
+				position: absolute;
+				left: 65px;
+			}
+    
+    #content{
+        width: 100%;
+        max-width: 1920px;
+        min-width: 1366px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+    #content > header{
+        padding: 20px;
+        background: #007fff;
+        color: #fff;
+    }
+    #content > section{
+        height: calc( 100% - 122px );
+    }
+    #content > section > nav{
+        width: 200px;
+        height: 100%;
+        padding: 10px;
+        vertical-align: top;
+        overflow-x: hidden;
+        transition: width 0.2s;
+        border-right: 1px solid #e2e2e2;
+    }
+    #content > section > nav li{
+        margin: 10px 0;
+    }
+    #content > section > nav dl{
+        display: none;
+    }
+    #content > section > div{
+        width: calc( 100% - 230px );
+        height: 100%;
+        vertical-align: top;
+    }
+    #content > footer{
+        display: block;
+        padding: 20px;
+        text-align: center;
+        background: #666;
+        color: #fff;
+    }
+	#beijing{
+		background-attachment: fixed;
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+    .inlineblock{
+        display: inline-block;
+    }
+    .button{
+				background-color: aliceblue;
+				left: 70px;
+    }
+</style>
+<body>
+<div id="background">
+    <header></header>
+    <section>
+        <nav type="0" class="inlineblock allNav">
+           
+		   <br>
+		   <br>
+        </nav><div class="inlineblock">
+        <form action="b3.html" method="get" >
+    <form action="form_action.asp" method="get">
+				<!--<input class="title" value="Resume">Resume</input>-->
+				<div id="part1-div">
+				<div style="width: 260px; height: 1500px; background-color: darkblue;margin-left: 0px; align-items: center; position: absolute; top: -30px;">
+					<div>
+					<form class="button" style="margin-top: 130px;">
+						<input type="button" value="" style="width: 0px;height: 0px;" />
+					</form>
+					<img src="logo.png" style="position: absolute;left: -25px; top: 20px; width: 300px;"/>
+					<form class="button" style="margin-top: 130px;">
+						<input type="button" value="Edit" style="width: 100px;height: 40px;" />
+					</form>
+					<form class="button" style="margin-top: 200px;">
+						<input type="button" value="Upload" style="width: 100px;height: 40px;" />
+					</form>
+					<form class="button" style="margin-top: 270px;">
+						<input type="button" value="Download" style="width: 100px;height: 40px;" />
+					</form>
+					</div>
+	<div style="position: absolute; left: 400px;">
+	<table border="1" align="center" width="800" height="100" bgcolor="lavender" style="position: absolute; top: 50px;">
+		<tr>
+			<td colspan="3" align="center" style="font-size: 30px;"><b>My Curriculum Vitae</b></td>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="name" value="" maxlength="5"  size="50"  /></td>
+			<td rowspan="5" width="80px">
+				<div style="position: absolute; top: 40%;" align="bottom">
+					<img src="用户.png" style="position: absolute; top: -90px; width: 60px; left: 10px;"/>
+					<input type="button" value="Select Photo" style="font-size: 12px;"/>
+				</div>
+					
+			</td>
+		</tr>
+		<tr>
+			<td>Position:</td>
+			<td><input type="text" name="job"   /></td>
+		</tr>
+		<tr>
+			<td>Sex:</td>
+			<td>female<input type="radio" name="sex"/>male<input type="radio" name="sex"/></td>
+		</tr>
+		<tr>
+			<td>Nationality:</td>
+			<td><input type="text" name="nation"   /></td>
+		</tr>
+		<tr>
+			<td>English Level:</td>
+			<td>
+				<select name="eng" width="25">
+					<option selected="selected" >---Please Select---</option>
+					<option >Excellent</option>
+					<option >Good</option>
+					<option >Fair</option>
+				</select>
+			</td>
+		</tr>
+		<!--<tr>-->
+			<!--<td>Photo:</td>-->
+			<!--<td><input type="file" value="Browse"/>Unselected</td>-->
+		<!--</tr>-->
+		<!--<tr>
+			<td>Photo:</td>
+			<td><input type="file" name="photo"/></td>
+		</tr>-->
+		<tr>
+			<td>Self Comment:</td>
+			<td colspan="2"><textarea name="desc" cols="40" rows="10"  ></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="submit" value="Save" style="font-size: 20px;"/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" value="Reset" style="font-size: 20px;"/></td>
+		</tr>
+		
+	</table>
+	</div>
+ </form>
+		
+		
+        <div>
+            <ul id="type2">
+
+            </ul>
+        </div>
+    </div>
+    </section>
+    <footer"> @copyright 2018 Capgemini</footer>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layui</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/layui.css"  media="all">
+  <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+<body>
+          
+
+ 
+<form class="layui-form" action="">
+ 
+  
+  <div class="layui-form-item" style="margin-top: 398px;margin-left: 786px;">
+    <div class="layui-inline">
+      <label class="layui-form-label">验证手机</label>
+      <div class="layui-input-inline">
+        <input name="phone" class="layui-input" type="tel" autocomplete="off" lay-verify="required|phone">
+      </div>
+    </div><br/>
+    <div class="layui-inline">
+      <label class="layui-form-label">验证邮箱</label>
+      <div class="layui-input-inline">
+        <input name="email" class="layui-input" type="text" autocomplete="off" lay-verify="email">
+      </div>
+    </div>
+  
+</form>
+ 
+<!-- 示例-
+  
+  //表单初始赋值
+  form.val('example', {
+    "username": "贤心" // "name": "value"
+    ,"password": "123456"
+    ,"interest": 1
+    ,"like[write]": true //复选框选中状态
+    ,"close": true //开关状态
+    ,"sex": "女"
+    ,"desc": "我爱 layui"
+  })
+  
+  
+});
+</script>
+
+</body>
+</html>

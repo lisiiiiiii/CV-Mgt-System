@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+
+</head>
+<style>
+	 input{
+	        outline: none;
+	    }
+	    
+	    img {
+	        border: medium none;
+	    }
+    body, img, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, form, div, input, textarea, span {
+        margin: 0;
+        padding: 0;
+        font-family: "宋体", "Arial";
+    }
+
+  
+    #content{
+        width: 100%;
+        max-width: 1920px;
+        min-width: 1366px;
+        height: 100%;
+        position: fixed;
+        top: -40;
+        bottom: 0;
+    }
+    #content > header{
+        padding: 20px;
+        background: #007fff;
+        color: #fff;
+    }
+    #content > section{
+        height: calc( 100% - 2px );
+        position: fixed;
+        top: 0;
+        width: 100px;
+        left: 0px;
+        top: -100px;
+    }
+    #content > section > nav{
+        width: 200px;
+        height: 100%;
+        padding: 10px;
+        vertical-align: top;
+        overflow-x: hidden;
+        transition: width 0.2s;
+        border-right: 1px solid #e2e2e2;
+    }
+    #content > section > nav li{
+        margin: 10px 0;
+    }
+    #content > section > nav dl{
+        display: none;
+    }
+    #content > section > div{
+        width: calc( 100% - 230px );
+        height: 100%;
+        vertical-align: top;
+    }
+    #content > footer{
+        display: block;
+        padding: 20px;
+        text-align: center;
+        background: #666;
+        color: #fff;
+    }
+	#beijing{
+		background-attachment: fixed;
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+    .inlineblock{
+        display: inline-block;
+    }
+    .button{
+				left: 70px;
+    }
+</style>
+<body background="背景2.png" id="beijing">
+<div id="content">
+    <section>
+     <!--   <nav type="0" class="inlineblock allNav">-->
+        	<div style="width: 260px; height: 1500px; background-color: darkblue;margin-left: 0px; align-items: center; top: -20;">
+					<div>
+					<form class="button" style="margin-top: 100px;">
+						<input type="button" value="" style="width: 0px;height: 0px;" />
+					</form>
+					<img src="logo.png" style="position: absolute;left: -23px; top: 100px; width: 300px;"/>
+					<form class="button" style="margin-top: 160px; margin-left: 70px;">
+						<input type="button" value="Search" style="width: 100px;height: 40px;" />
+					</form>
+					<form class="button" style="margin-top: 30px; margin-left: 70px;">
+						<input type="button" value="Recycle Bin" style="width: 100px;height: 40px;" />
+					</form>
+					</div>
+			</div>		
+		<div style="position: fixed; top: 20px; left: 270px;">   	
+        <!--</nav><div class="inlineblock">-->
+        <form action="b3.html">
+		<table class="table table-bordered" width="75%" cellspacing="5" bgcolor="azure" style="position: fixed; left: 300px; top: 40px;" border="1";>
+					
+                    <thead>
+						
+                    <tr style="text-align:center; font-size: 23px;">
+                        <th>Name</th>
+                        <th>Sex</th>
+                        <th>Position</th>
+                        <th>English</th>
+                        <th>Edit</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+					<br />
+					<br />
+					<!--<tr style="text-align:center">
+					                        <td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					   <tr style="text-align:center">
+					   						<td></td><td></td><td></td><td></td><td></td>
+					   </tr>
+					   <tr style="text-align:center">
+					   						<td></td><td></td><td></td><td></td><td></td>
+					   </tr>-->
+                    <tr style="text-align:center">
+                        <td>Changxin Man
+                        </td>
+
+                        <td>Male
+                        </td>
+
+                        <td>CEO
+                        </td>
+
+                        <td>Excellent
+                        </td>
+
+                        <td>
+							<input type="button" value="View" onclick="see()" />&nbsp;&nbsp;
+							 <input type="button" value="Delete" onclick="delete()" />
+                        </td>
+                    </tr>
+					<!--<tr style="text-align:center">
+											<td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr style="text-align:center">
+											<td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr style="text-align:center">
+											<td></td><td></td><td></td><td></td><td></td>
+					</tr>-->
+					<tr style="text-align:center">
+					                        <td>Qiuqi Yang
+					                        </td>
+					
+					                        <td>female
+					                        </td>
+					
+					                        <td>Test
+					                        </td>
+					
+					                        <td>Good
+					                        </td>
+					
+					                        <td>
+												<input type="button" value="View" onclick="see()" />&nbsp;&nbsp;
+												<input type="button" value="Delete" onclick="delete()" />
+					                        </td>
+					 </tr>
+					 <!--<tr style="text-align:center">
+					 						<td></td><td></td><td></td><td></td><td></td>
+					 </tr>
+					 <tr style="text-align:center">
+					 						<td></td><td></td><td></td><td></td><td></td>
+					 </tr>
+					 <tr style="text-align:center">
+					 						<td></td><td></td><td></td><td></td><td></td>
+					 </tr>-->
+					<tr style="text-align:center">
+											<td>Chengcheng Ning
+											</td>
+					
+											<td>female
+											</td>
+					
+											<td>Test
+											</td>
+					
+											<td>Good
+											</td>
+					
+											<td>
+												<input type="button" value="View" onclick="see()" />&nbsp;&nbsp;
+												<input type="button" value="Delete" onclick="delete()" />
+											</td>
+					</tr>
+                    </tbody>
+                </table>
+	
+	
+		</form>
+		</div>
+		
+        <div>
+            <ul id="type2">
+
+            </ul>
+        </div>
+    </div>
+    </section>
+</div>
+</body>
+
+</html>
